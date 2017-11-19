@@ -7,8 +7,7 @@ good performance with very few labeled data *(Salimans et. al., 2016)*.
 
 ## Overview
 
-To train a ![](http://latex.codecogs.com/gif.latex?k)-class classifier with a small number of labeled samples,
-the discriminator (D) in a GAN's game should be replaced with a
+To train a ![](http://latex.codecogs.com/gif.latex?k)-class classifier with a small number of labeled samples, discriminator (D) in a GAN's game should be replaced with a
 ![](http://latex.codecogs.com/gif.latex?%28k&plus;1%29)-classiifer where it receives a data point ![](http://latex.codecogs.com/gif.latex?x) as input and
 outputs a ![](http://latex.codecogs.com/gif.latex?%28k&plus;1%29)-dimensional vector of
 logits ![](http://latex.codecogs.com/gif.latex?%24%5C%20%5Cleft%5C%7B%20l_%7B1%7D%2Cl_%7B2%7D%2C%5C%20%5Cldots%2C%5C%20l_%7Bk%7D%2C%5C%20l_%7Bk%20&plus;%201%7D%20%5Cright%5C%7D%24).
@@ -78,6 +77,7 @@ So, the loss of generator can be written as:
 </p>
 
 ## Results
+
 Table below shows cross-validation accuracy of semi-supervised
 learning GAN for 1000 epochs when 10% and 100% of MNIST data is
 labeled. 
@@ -86,6 +86,7 @@ labeled.
 | 10% labeled data           | 100% labeled data  |
 |----------------------------| -------------------|
 | 0.9255                     | 0.945              |
+
 
 
 Figure below shows cross-validation accuracy for 1000 epochs when
@@ -106,5 +107,5 @@ training when 10% of data is labeled:
 
 Salimans, T., Goodfellow, I., Zaremba, W., Cheung, V., Radford, A., and
 Chen, X. (2016). Improved Techniques for Training GANs. *In advances in
-Neural Information Processing Systems (NIPS)*, pages 2226-2234.
+Neural Information Processing Systems (NIPS)*, pages 2226-2234
 (<http://papers.nips.cc/paper/6125-improved-techniques-for-training-gans.pdf>)
