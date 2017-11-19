@@ -88,7 +88,7 @@ labeled.
 | 0.9255                     | 0.945              |
 
 
-Figure below shows cross-validation accuracy for 1000 iterations when
+Figure below shows cross-validation accuracy for 1000 epochs when
 10% of data is labeled. As can be seen here, training has not yet reached a
 plateau which indicates further training could provide higher accuracy.
 
